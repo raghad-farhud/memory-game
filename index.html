@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+    <link rel="icon" href="imgs/question.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-game">
+            <span>Start Game</span>
+        </div>
+        <div id="win-msg">
+            <p> Big Win 😍✨ </p>
+            <span>Play Again!</span>
+            <div class="end-information">
+                <div class="wrong-tries">wrong tries: <span>0</span></div>
+                <div class="during-time">during: <span>0</span> s</div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="name">
+                hello: <span></span>
+            </div>
+            <div class="tries">
+                wrong tries: <span>0</span>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="img-block" data-img="one">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img1.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="one">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img1.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="two">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img2.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="two">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img2.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="three">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img3.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="three">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img3.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="four">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img4.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="four">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img4.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="five">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img5.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="five">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img5.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="six">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img6.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="six">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img6.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="seven">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img7.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="seven">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img7.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="eight">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img8.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="eight">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img8.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="nine">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img9.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="nine">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img9.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="ten">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img10.png" alt="">
+                </div>
+            </div>
+            <div class="img-block" data-img="ten">
+                <div class="front face"></div>
+                <div class="back face">
+                    <img src="imgs/memory-game-img10.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <p id="during" style="display: none;">during: <span>0s</span></p>
+    </div>
+    <audio id="flip-sound" src="audio/flipping.wav" preload="auto"></audio>
+    <audio id='lose-sound' src="audio/lose.wav" preload="auto"></audio>
+    <audio id='win-sound' src="audio/win.wav" preload="auto"></audio>
+    <audio id='big-win-sound' src="audio/mixkit-video-game-win-2016.wav" preload="auto"></audio>
+
+    <script src="main.js"></script>
+</body>
+</html>
